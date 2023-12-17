@@ -26,22 +26,22 @@ function updateWeather(data) {
 
     switch (data.weather[0].main.toLowerCase()) {
         case 'clouds':
-            weatherIcon.src = "/images/clouds.png";
+            weatherIcon.src = "clouds.png";
             break;
         case 'clear':
-            weatherIcon.src = "/images/clear.png";
+            weatherIcon.src = "clear.png";
             break;
         case 'rain':
-            weatherIcon.src = "/images/rain.png";
+            weatherIcon.src = "rain.png";
             break;
         case 'drizzle':
-            weatherIcon.src = "/images/drizzle.png";
+            weatherIcon.src = "drizzle.png";
             break;
         case 'mist':
-            weatherIcon.src = "/images/mist.png";
+            weatherIcon.src = "mist.png";
             break;
         default:
-            weatherIcon.src = "/images/unknown.png";
+            weatherIcon.src = "unknown.png";
     }
 
     document.querySelector(".weather").style.display = "block";
